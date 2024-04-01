@@ -4,13 +4,14 @@ import Sidebar from '../../components/Sidebar';
 import styles from './Layout.module.css'
 import { NavLink, Outlet } from 'react-router-dom'
 
-const Layout = ({ updateSelectedGroup, pageTitle, animalGroupSB, showAnimal }) => {
+const Layout = ({ updateSelectedGroup, pageTitle, animalGroupSB, showAnimal, resetShowAnimal }) => {
  
 
 
 
     const handlePageChoice = (group) => {
         updateSelectedGroup(group)
+        resetShowAnimal(null)
     }
 
 
