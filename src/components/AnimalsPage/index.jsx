@@ -1,22 +1,25 @@
 import { useState } from 'react';
-import Header from '../Header';
+import { getImageURL } from '../../utils/functions';
+import Animal from '../Animal';
+import { mammals, birds, reptiles } from '../../data/animals';
 import styles from './AnimalsPage.module.css'
 
-const AnimalsPage = ({ group, subPageTitle, pageTitle }) => {
-    const [animalGroup, setAnimalGroup] = useState()
-
-    console.log(group);
+const AnimalsPage = ({ subPageTitle, selectedAnimalGroup}) => {
+    let animalGroup = selectedAnimalGroup
+    console.log(animalGroup);
     
-    
-
     return (
         <>
-            <Header pageTitle={pageTitle} />
             <div className={styles.animalGroupPage}>
-                <h2>{subPageTitle}</h2>
+                <h2 className={styles.subPageTitle}>{subPageTitle}</h2>
+
+                {animalGroup === 'mammals' && mammals.map((animal, index) => <Animal key={index} {...animal} /> )}
+                {animalGroup === 'birds' && birds.map((animal, index) => <Animal key={index} {...animal} /> )}
+                {animalGroup === 'reptiles' && reptiles.map((animal, index) => <Animal key={index} {...animal} /> )}
             </div>
         </>
     )
 };
 
 export default AnimalsPage
+

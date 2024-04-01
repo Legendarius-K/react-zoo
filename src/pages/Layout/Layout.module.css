@@ -1,0 +1,21 @@
+.nav {
+    padding: 24px;
+    background-color: rgb(70, 99, 72);
+    display: flex;
+    justify-content: space-around;
+}
+
+.navItem {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.active {
+    color: orange;
+}
+
+.mainContent {
+    display: flex;
+    flex-grow: 1;
+}
+

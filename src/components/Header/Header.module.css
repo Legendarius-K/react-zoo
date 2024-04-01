@@ -1,0 +1,15 @@
+.header {
+    background-image: url(../../assets/images/hero-img.jpg);
+    background-size: cover;
+    min-height: 300px;
+    color: rgb(247, 235, 208)
+}
+
+h1 {
+    margin: 0;
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 3.5rem;
+    /* -webkit-text-stroke: 1px rgb(255, 255, 255); */
+    font-family: "Paytone One";
+}

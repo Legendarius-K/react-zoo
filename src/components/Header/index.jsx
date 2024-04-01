@@ -1,9 +1,10 @@
 import styles from './Header.module.css'
 
-const Header = ({ pageTitle }) => {
+const Header = ({ pageTitle, subPageTitle }) => {
     return (
-        <header>
+        <header className={styles.header}>
             <h1>{pageTitle}</h1>
+            <h2>{subPageTitle}</h2>
         </header>
     )
 };

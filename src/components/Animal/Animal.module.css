@@ -1,0 +1,42 @@
+.animal {
+    display: none;
+}
+
+.activeAnimal {
+    display: block;
+}
+
+.imgDescription img {
+    width: 30%;
+}
+
+.speciesHeadline {
+    text-align: center;
+    font-family: "Paytone One";
+}
+
+.animalInfo {
+    background-color: rgb(231, 219, 184);
+    /* border: 1px solid rgb(84, 124, 97); */
+    padding: 8px;
+}
+
+.animal {}
+
+.echidna {}
+
+.quokka {}
+
+.devil {}
+
+.kookaburra {}
+
+.cassowary {}
+
+.cockatoo {}
+
+.frillneck {}
+
+.perentie {}
+
+.hawksbill {}
