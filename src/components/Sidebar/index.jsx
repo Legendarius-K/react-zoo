@@ -1,12 +1,22 @@
 import styles from './Sidebar.module.css'
 import { mammals, birds, reptiles } from '../../data/animals';
+import { useState } from 'react';
 
 const Sidebar = ({ animalGroupSB, showAnimal }) => {
+    const [clickedAnimal, setClickedAnimal] = useState(null)
+    
     let animalGroup = animalGroupSB
 
     const handleClick = (classOfAnimal) => {
-        showAnimal(classOfAnimal)
+        setClickedAnimal(clickedAnimal === classOfAnimal ? null : classOfAnimal)
+        showAnimal(clickedAnimal === classOfAnimal ? null : classOfAnimal);
     }
+
+    
+    // const handleClick = (classOfAnimal) => {
+    //     clickedAnimal === classOfAnimal ? showAnimal(null) : showAnimal(classOfAnimal)
+    //     clickedAnimal = classOfAnimal
+    // }
 
 
 

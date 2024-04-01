@@ -1,23 +1,22 @@
 import styles from './Home.module.css'
 import { allAnimals } from '../../data/animals';
 import Animal from '../Animal';
+import WelcomeMessage from '../WelcomeMessage';
 
 const Home = ({ showAnimal }) => {
 
     let toggledAnimal = showAnimal;
-    console.log('toggledAnimal: ', toggledAnimal);
-
-    
 
     return (
         <div className={styles.home}>
-            <h2 className={styles.homeSub}>Welcome to Le Zoo!</h2>
-
-            {allAnimals.map((animal,  index) => {
-                return <Animal key={index} {...animal} />
+            <h2 className={styles.homeSub}>Welcome to Ze Zoo!</h2>
+            {allAnimals.map((animal, index) => {
+               return animal.animalClass === toggledAnimal ? <Animal key={index} {...animal} /> : '';
             })}
+            {!toggledAnimal && <WelcomeMessage headline="Welcome to ze best zoo in ze world!" message="This zoo is a zoo." />}
         </div>
     )
 };
 
 export default Home
+
