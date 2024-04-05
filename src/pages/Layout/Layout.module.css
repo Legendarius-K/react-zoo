@@ -1,8 +1,9 @@
 .nav {
-    padding: 24px;
+    padding: 3px;
     background-color: rgb(70, 99, 72);
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .navItem {

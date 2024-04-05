@@ -6,9 +6,10 @@
 }
 
 .subPageTitle {
+    width: 230px;
     text-align: center;
-
-    margin: 0 30px;
+    align-self: center;
+    margin: 0 ;
     padding: 15px;
     background-color: rgb(106, 137, 108);
     font-family: "Paytone one";

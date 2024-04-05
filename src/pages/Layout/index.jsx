@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { NavLink, Outlet } from 'react-router-dom'
+import zooLogo from '../../assets/images/zoo-logo.png'
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 import styles from './Layout.module.css'
-import { NavLink, Outlet } from 'react-router-dom'
+import Footer from '../../components/Footer';
 
 const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal }) => {
  
@@ -14,6 +16,7 @@ const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal })
     return (
         <>
             <nav className={styles.nav}>
+                <img src={zooLogo} alt="logo" width="60px" />
                 <NavLink onClick={() => handlePageChoice(null)} className={styles.navItem} to="/">Home</NavLink>
                 <NavLink onClick={() => handlePageChoice('mammals')} className={styles.navItem} to="/mammals?group=mammals">Mammals</NavLink>
                 <NavLink onClick={() => handlePageChoice('birds')} className={styles.navItem} to="/birds?group=birds">Birds</NavLink>
@@ -23,8 +26,8 @@ const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal })
             <div className={styles.mainContent}>
                 <Sidebar showAnimal={showAnimal}/>
                 <Outlet />
-
             </div>
+                <Footer />
         </>
     )
 };
