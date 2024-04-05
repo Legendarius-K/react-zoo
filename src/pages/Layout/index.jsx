@@ -16,7 +16,7 @@ const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal })
     return (
         <>
             <nav className={styles.nav}>
-                <img src={zooLogo} alt="logo" width="60px" />
+                <img className={styles.logo} src={zooLogo} alt="logo" width="60px" />
                 <NavLink onClick={() => handlePageChoice(null)} className={styles.navItem} to="/">Home</NavLink>
                 <NavLink onClick={() => handlePageChoice('mammals')} className={styles.navItem} to="/mammals?group=mammals">Mammals</NavLink>
                 <NavLink onClick={() => handlePageChoice('birds')} className={styles.navItem} to="/birds?group=birds">Birds</NavLink>

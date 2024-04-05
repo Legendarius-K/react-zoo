@@ -13,4 +13,18 @@
 
 .sidebar p {
     margin: 6px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.sidebar p:hover {
+    color: rgb(207, 110, 0);
+}
+
+@media screen and (min-width: 768px) {
+    
+    .sidebar {
+        min-width: 150px;
+    }
+
 }
