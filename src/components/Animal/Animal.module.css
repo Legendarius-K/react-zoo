@@ -1,13 +1,38 @@
-/* .animal {
-    display: none;
+.animal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.activeAnimal {
-    display: block;
-} */
+.imgDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDescription > * {
+    margin: 10px;
+}
 
 .imgDescription img {
-    width: 30%;
+    width: 50%;
+    align-self: center;
+    margin: 15px;
+}
+
+.imgDescription .imgHome {
+    width: 40%;
+    max-width: 400px;
+}
+
+.imgDescription .imgGroupPage {
+    width: 90%;
+    max-width: 500px;
+}
+
+.imgDescription .imgPopup {
+   width: 80%;
+   max-width: 400px;
 }
 
 .speciesHeadline {
@@ -16,9 +41,25 @@
 }
 
 .animalInfo {
-    background-color: rgb(231, 219, 184);
-    /* border: 1px solid rgb(84, 124, 97); */
+    background-color: rgb(239, 223, 175);
     padding: 8px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.animalInfo a {
+    text-transform: capitalize;
+}
+
+
+.disableClick a {
+    pointer-events: none;
+    color: black;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
 }
 
 .animal {}
@@ -40,3 +81,19 @@
 .perentie {}
 
 .hawksbill {}
+
+@media screen and (min-width: 768px) {
+    
+    .imgDescription {
+        flex-direction: row;
+    }
+
+    .imgDescription .imgHome {
+        width: 20%;
+    }
+
+    .imgDescription .imgGroupPage {
+        width: 50%;
+    }
+
+}

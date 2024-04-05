@@ -12,6 +12,8 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
         showAnimal(clickedAnimal === classOfAnimal ? null : classOfAnimal);
     }
 
+    const params = new URLSearchParams(location.search);
+    const group = params.get('group');
     
     // const handleClick = (classOfAnimal) => {
     //     clickedAnimal === classOfAnimal ? showAnimal(null) : showAnimal(classOfAnimal)
@@ -22,7 +24,7 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
 
     return (
         <div className={styles.sidebar}>
-            {!animalGroup || animalGroup === 'mammals' ?
+            {!group || group === 'mammals' ?
                 <>
                     <div className={styles.sidebarSubHead}>
                         <h3>Mammals</h3>
@@ -30,7 +32,7 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
                     </div>
                 </>
                 : ''}
-            {!animalGroup || animalGroup === 'birds' ?
+            {!group || group === 'birds' ?
                 <>
                     <div className={styles.sidebarSubHead}>
                         <h3>Birds</h3>
@@ -38,7 +40,7 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
                     </div>
                 </>
                 : ''}
-            {!animalGroup || animalGroup === 'reptiles' ?
+            {!group || group === 'reptiles' ?
                 <>
                     <div className={styles.sidebarSubHead}>
                         <h3>Reptiles</h3>

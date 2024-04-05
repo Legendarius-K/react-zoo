@@ -15,11 +15,11 @@ function App() {
     return (
         <>
             <Routes >
-                <Route element={<Layout resetShowAnimal={setShowAnimal} showAnimal={setShowAnimal} animalGroupSB={selectedGroup} updateSelectedGroup={setSelectedGroup} pageTitle={selectedGroup ? selectedGroup : "Le Zoo"} />}>
-                    <Route path="/" element={<Home showAnimal={showAnimal} pageTitle="Captivity Haven Zoo" />} />
-                    <Route path="/mammals" element={<AnimalsPage showAnimal={showAnimal} selectedAnimalGroup={selectedGroup} pageTitle="Mammals" subPageTitle={"Furry Friends"} />} />
-                    <Route path="/birds" element={<AnimalsPage showAnimal={showAnimal} selectedAnimalGroup={selectedGroup} pageTitle="Bird" subPageTitle={"Winged Dinosaurs"} />} />
-                    <Route path="/reptiles" element={<AnimalsPage showAnimal={showAnimal} selectedAnimalGroup={selectedGroup} pageTitle="Reptiles" subPageTitle={"Venomous Beasts"} />} />
+                <Route element={<Layout resetShowAnimal={setShowAnimal} showAnimal={setShowAnimal} updateSelectedGroup={setSelectedGroup} pageTitle={selectedGroup ? selectedGroup : "Ze Zoo"} />}>
+                    <Route path="/" element={<Home showAnimal={showAnimal} />} />
+                    <Route path="/mammals" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Mammals" subPageTitle={"Furry Friends"} />} />
+                    <Route path="/birds" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Bird" subPageTitle={"Winged Dinosaurs"} />} />
+                    <Route path="/reptiles" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Reptiles" subPageTitle={"Venomous Beasts"} />} />
                 </Route>
             </Routes>
         </>
