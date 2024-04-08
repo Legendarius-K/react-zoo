@@ -3,4 +3,9 @@
     text-align: center;
     background-color: rgb(70, 99, 72);
     color: white;
+    display: flex;
+}
+
+.footer p {
+    margin: auto 15px;
 }
