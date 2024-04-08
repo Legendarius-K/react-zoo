@@ -9,14 +9,10 @@ const Home = ({ showAnimal }) => {
     const [togglePopup, setTogglePopup] = useState(false)
 
     let toggledAnimal = showAnimal;
-    console.log('toggledAnimal: ', toggledAnimal);
-
 
     const handleClick = () => {
         setTogglePopup(!togglePopup)
     }
-
-    console.log(togglePopup);
 
     return (
         <div className={styles.home}>

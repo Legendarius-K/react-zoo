@@ -3,14 +3,12 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './pages/Layout'
 import AnimalsPage from './components/AnimalsPage'
 import Home from './components/Home'
+import Dogs from './components/Dogs'
 import './App.css'
 
 function App() {
     const [selectedGroup, setSelectedGroup] = useState(null)
     const [showAnimal, setShowAnimal] = useState()
-
-
-
 
     return (
         <>
@@ -20,6 +18,7 @@ function App() {
                     <Route path="/mammals" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Mammals" subPageTitle={"Furry Friends"} />} />
                     <Route path="/birds" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Bird" subPageTitle={"Winged Dinosaurs"} />} />
                     <Route path="/reptiles" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Reptiles" subPageTitle={"Venomous Beasts"} />} />
+                    <Route path="/dogs" element={<Dogs pageTitle="Reptiles" subPageTitle={"Drooling Furrballs"} />} />
                 </Route>
             </Routes>
         </>

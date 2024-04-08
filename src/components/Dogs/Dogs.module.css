@@ -1,0 +1,40 @@
+.dogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.dogBtn {
+    background-color: rgb(81, 123, 106);
+    border: 1px orange solid;
+    border-radius: 50%;
+    margin: 0 0 30px 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dogBtn:hover {
+    background-color: rgb(122, 149, 138);
+}
+
+.petMe {
+    margin-bottom: 0;
+}
+
+.arrowDown {
+    margin: 5px;
+}
+
+.dogImage {
+    width: 85%;
+    max-width: 700px;
+    margin: 0 25px 25px 25px;
+    border-radius: 50%;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    transition: 2s;
+}
+
+.spinDog {
+    transform: rotateZ(2160deg)
+}

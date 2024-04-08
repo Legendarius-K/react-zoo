@@ -35,12 +35,14 @@ const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal })
                 <NavLink onClick={() => handlePageChoice('mammals')} className={styles.navItem} to="/mammals?group=mammals">Mammals</NavLink>
                 <NavLink onClick={() => handlePageChoice('birds')} className={styles.navItem} to="/birds?group=birds">Birds</NavLink>
                 <NavLink onClick={() => handlePageChoice('reptiles')} className={styles.navItem} to="/reptiles?group=reptiles">Reptiles</NavLink>
+                <NavLink onClick={() => handlePageChoice('dogs')} className={styles.navItem} to="/dogs?group=dogs">Dogs</NavLink>
             </nav>
             <nav className={`${styles.hamburger} ${styles[showHamburger ? 'visible' : '']}`}>
                 <NavLink onClick={() => handlePageChoice(null)} className={styles.hamburgerItem} to="/">Home</NavLink>
                 <NavLink onClick={() => handlePageChoice('mammals')} className={styles.hamburgerItem} to="/mammals?group=mammals">Mammals</NavLink>
                 <NavLink onClick={() => handlePageChoice('birds')} className={styles.hamburgerItem} to="/birds?group=birds">Birds</NavLink>
                 <NavLink onClick={() => handlePageChoice('reptiles')} className={styles.hamburgerItem} to="/reptiles?group=reptiles">Reptiles</NavLink>
+                <NavLink onClick={() => handlePageChoice('dogs')} className={styles.hamburgerItem} to="/dogs?group=dogs">Dogs</NavLink>
             </nav>
             <div onClick={hideHamburger} className={`${styles.overlay} ${styles[showHamburger ? 'showOverlay' : '']}`}></div>
             <Header pageTitle={pageTitle} />

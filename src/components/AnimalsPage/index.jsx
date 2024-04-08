@@ -11,8 +11,6 @@ const AnimalsPage = ({ subPageTitle, showAnimal}) => {
 
     const params = new URLSearchParams(location.search);
     const group = params.get('group');
-    console.log(group);
-
     
     return (
         <>

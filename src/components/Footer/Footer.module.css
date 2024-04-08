@@ -4,6 +4,7 @@
     background-color: rgb(70, 99, 72);
     color: white;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .footer p {
