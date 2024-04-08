@@ -1,0 +1,47 @@
+.gallery {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(20, 29, 24);
+    color: rgb(237, 226, 204);
+}
+
+.elephant,
+.furrball,
+.giraffe,
+.lion,
+.panda,
+.parrot {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.elephant {
+    background-image: url("../../assets/images/elephants.jpg");
+}
+
+.furrball {
+    background-image: url("../../assets/images/furrball.jpg");
+}
+
+.giraffe {
+    background-image: url("../../assets/images/giraffe.jpg");
+}
+
+.lion {
+    background-image: url("../../assets/images/lion.jpg");
+}
+
+.panda {
+    background-image: url("../../assets/images/panda.jpg");
+}
+
+.parrot {
+    background-image: url("../../assets/images/parrot.jpg");
+}
+
+.galleryDescription {
+    height: 120px;
+}

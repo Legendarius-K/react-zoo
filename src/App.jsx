@@ -4,6 +4,8 @@ import Layout from './pages/Layout'
 import AnimalsPage from './components/AnimalsPage'
 import Home from './components/Home'
 import Dogs from './components/Dogs'
+import Gallery from './components/Gallery'
+import LayoutGallery from './pages/LayoutGallery'
 import './App.css'
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
                     <Route path="/birds" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Bird" subPageTitle={"Winged Dinosaurs"} />} />
                     <Route path="/reptiles" element={<AnimalsPage showAnimal={showAnimal} pageTitle="Reptiles" subPageTitle={"Venomous Beasts"} />} />
                     <Route path="/dogs" element={<Dogs pageTitle="Reptiles" subPageTitle={"Drooling Furrballs"} />} />
+                </Route>
+                <Route element={<LayoutGallery/>}>
+                    <Route path="/gallery" element={<Gallery />} />
                 </Route>
             </Routes>
         </>

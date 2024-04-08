@@ -47,7 +47,8 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
                         {reptiles.map((animal, index) => <p onClick={() => handleClick(animal.animalClass)} className="sidebarItem" key={index}>{animal.species}</p>)}
                     </div>
                 </>
-                : 'Woof'}
+                : ''}
+            {group === 'dogs' && 'Woof!' }
 
         </div>
     )
