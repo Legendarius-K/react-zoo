@@ -1,7 +1,8 @@
 .gallery {
     width: 100%;
     text-align: center;
-    background-color: rgb(20, 29, 24);
+    background-color: rgb(43, 43, 43);
+    /* background-color: rgb(68, 101, 76); */
     color: rgb(237, 226, 204);
 }
 
@@ -11,7 +12,7 @@
 .lion,
 .panda,
 .parrot {
-    min-height: 500px;
+    min-height: 650px;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -44,4 +45,34 @@
 
 .galleryDescription {
     height: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .elephant,
+    .furrball,
+    .giraffe,
+    .lion,
+    .panda,
+    .parrot {
+        background-attachment: inherit;
+    }
+
+    .galleryDescription {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .elephant,
+    .furrball,
+    .giraffe,
+    .lion,
+    .panda,
+    .parrot {
+        background-attachment: inherit;
+        min-height: 300px;
+    }
 }
