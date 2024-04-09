@@ -17,6 +17,24 @@
 .navItem {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    position: relative;
+}
+
+.navItem::after {
+    content: '';
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: 300ms;
+}
+
+.navItem:hover::after {
+    border: 0.5px solid rgb(255, 166, 1);
+    width: 100px;
 }
 
 .hamburgerItem {
