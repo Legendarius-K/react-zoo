@@ -7,7 +7,7 @@ const Animal = ({ animalClass, species, description, lifespan, group, food, leng
     return (
         <div className={`${styles.animal} ${styles[animalClass]} animal`}>
             <h2 className={styles.speciesHeadline}>{species}</h2>
-            <div className={styles.imgDescription}>
+            <div className={`${styles.imgDescription} ${styles.animalInfo}`}>
                 <img className={styles[imgClass]} src={getImageURL(image)} alt={species} />
                 <p>{description}</p>
             </div>
