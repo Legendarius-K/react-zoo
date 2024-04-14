@@ -9,8 +9,8 @@ import hamburgerMenu from '../../assets/images/hamburger-menu.png'
 
 const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal }) => {
 
-    const  [showHamburger, setShowHamburger] = useState(false)
- 
+    const [showHamburger, setShowHamburger] = useState(false)
+
     const handlePageChoice = (group) => {
         updateSelectedGroup(group)
         resetShowAnimal(null)
@@ -24,7 +24,7 @@ const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal })
     const hideHamburger = () => {
         setShowHamburger(false)
     }
- 
+
     return (
         <>
             <nav className={styles.nav}>
@@ -50,10 +50,10 @@ const Layout = ({ updateSelectedGroup, pageTitle, showAnimal, resetShowAnimal })
             <div onClick={hideHamburger} className={`${styles.overlay} ${styles[showHamburger ? 'showOverlay' : '']}`}></div>
             <Header pageTitle={pageTitle} />
             <div className={styles.mainContent}>
-                <Sidebar showAnimal={showAnimal}/>
+                <Sidebar showAnimal={showAnimal} />
                 <Outlet />
             </div>
-                <Footer />
+            <Footer />
         </>
     )
 };

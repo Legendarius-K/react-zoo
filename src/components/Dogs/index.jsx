@@ -22,7 +22,6 @@ const Dogs = () => {
         setDogSpinner(!dogSpinner)
     }
 
-
     return (
         <div className={styles.dogs}>
             <p className={styles.petMe}>Pet Me!</p>

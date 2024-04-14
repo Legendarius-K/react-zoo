@@ -1,10 +1,4 @@
 import styles from './Gallery.module.css'
-import parrot from '../../assets/images/parrot.jpg'
-import panda from '../../assets/images/panda.jpg'
-import giraffe from '../../assets/images/giraffe.jpg'
-import lion from '../../assets/images/lion.jpg'
-import furrball from '../../assets/images/furrball.jpg'
-import elephants from '../../assets/images/elephants.jpg'
 
 const Gallery = () => {
     return (

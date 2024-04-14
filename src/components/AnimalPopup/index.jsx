@@ -8,7 +8,6 @@ const AnimalPopup = ({ spreadAnimal, togglePopup }) => {
     }
 
     return ( 
-
         <div className={styles.popup}>
             <p className={styles.cross} onClick={handleClick}>&#10005;</p>
             <Animal {...spreadAnimal} imgClass={'imgPopup'}/>

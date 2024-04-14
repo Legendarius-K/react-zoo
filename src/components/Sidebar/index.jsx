@@ -7,7 +7,6 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
     const [highlight, setHighlight] = useState(null)
     console.log('highlight: ', highlight);
 
-    
     let animalGroup = animalGroupSB
 
     const handleClick = (classOfAnimal) => {
@@ -46,7 +45,6 @@ const Sidebar = ({ animalGroupSB, showAnimal }) => {
                 </>
                 : ''}
             {group === 'dogs' && 'Woof!' }
-
         </div>
     )
 };

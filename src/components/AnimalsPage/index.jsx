@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import { getImageURL } from '../../utils/functions';
 import Animal from '../Animal';
 import WelcomeMessage from '../WelcomeMessage';
-import { mammals, birds, reptiles, allAnimals } from '../../data/animals';
+import { allAnimals } from '../../data/animals';
 import styles from './AnimalsPage.module.css'
 
 const AnimalsPage = ({ subPageTitle, showAnimal}) => {

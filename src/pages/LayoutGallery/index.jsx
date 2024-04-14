@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom'
 import zooLogo from '../../assets/images/zoo-logo.png'
-import Header from '../../components/Header';
-import Sidebar from '../../components/Sidebar';
 import styles from './LayoutGallery.module.css'
 import Footer from '../../components/Footer';
 import hamburgerMenu from '../../assets/images/hamburger-menu.png'

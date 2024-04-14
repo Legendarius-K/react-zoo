@@ -1,6 +1,5 @@
 import styles from './Animal.module.css'
 import { getImageURL } from '../../utils/functions';
-import { NavLink } from 'react-router-dom';
 
 const Animal = ({ animalClass, species, description, lifespan, group, food, length, weight, found, image, hideClass, imgClass, disableClickClass, animalGroup }) => {
 
